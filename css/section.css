@@ -3,33 +3,175 @@
     font-weight: bold;
 }*/
 .main
-  { 
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(20,1fr);
-    grid-auto-rows: repeat(100px, auto);
-    grid-gap: 10px;
-    margin-top: 100px;
+    { 
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(20,1fr);
+        grid-auto-rows: repeat(100px, auto);
+        grid-gap: 10px;
+        margin-top: 100px;    
+    
+    }
+.recipes
+    {
+        grid-column: 1/5;
+        background-color: #333;
+        text-align: center;
+        color: antiquewhite;
+        display: flex;
+        margin-top: 2px;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+.recipes > div
+    {
+        margin-top: 20px;
+    }    
+.ml
+    {        
+        font-weight: bold;
+        list-style: none;
+        margin-bottom: 3px;
+        line-height: 1.5em;
+    }
+.ml:hover
+    {
+        color: red;
+        text-shadow: 1px 1px 1px white;
+    }
+.hl
+    {
+        font-weight: bold;
+        font-family:'Times New Roman', Times, serif;
+        color: rgb(187, 8, 8);
+    }
+.ranking
+    {  
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        margin-bottom: 5px;
+        line-height: 2em;
+    }
+.pub_image
+    {
+        width:150px;
+        height: 130px;
+        margin-bottom: 10px;
+        border-radius: 55px;
+    }
+.dishes
+    {
+        grid-column: 5/21;
+        margin-top: 2px;
+     
+    }
+.card1
+    {
+        grid-row: 1/7;
+        display: flex;
+        justify-content:space-between;
+        
+        margin-bottom: 10px;           
+    }
+.card_screen
+    {
+        display: flex;
+        flex-direction: column;
+        height: 660px;
+        
+    }
+
+.cardbody
+    {
+        display: flex;
+        flex-direction: column;
+    }
+.card-title
+{
+    color: darkred;
+}
+
+
+@media screen and (min-width:1200px)
+{
+    .ml
+        {
+            font-size: 22px;
+        }  
+    .ml:hover
+        {
+            font-size: 26px;
+
+        }
+    .hl
+        {
+            font-size: 42px;
+        }
+    .card_screen
+        {
+            display: flex;
+            flex-direction: column;
+            width: 32%;
+
+        }
+    .cardimag
+        {
+            display: inline-block;
+            width: 100%;
+            height: 300px;
+        }
+    .card1
+        {
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+        
+    
+}
+@media screen and (max-width:1199px) and (min-width:800px)
+{
+    .ml
+        {
+            font-size: 18px;
+        }  
+    .ml:hover
+        {
+            font-size: 20px;
+
+        }
+    .hl
+        {
+            font-size: 25px;
+        }
+    .card_screen
+        {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+
+        }
+    .cardimag
+        {
+            
+            width: 300px;
+            height: 300px;
+            border: solid 4px white;
+        }
+    .card1
+        {
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
     
    
 }
-.recipes
-{
-    grid-column: 1/4;
-    background-color: #333;
-    text-align: center;
-    color: antiquewhite;
-    padding: 15px;
-    margin-top: 2px;
-}
-.dishes
-{
-    grid-column: 4/21;
-    margin-top: 2px;
-    /*grid-row: 1/7;*/
- 
-}
+
+
 .article
 {
     grid-column: 1/21;
@@ -50,67 +192,21 @@
     flex-wrap: wrap;
 }
 
-.card1
-{
-    /*grid-column:4/21;*/
-    grid-row: 1/4;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 10px;
-    
-}
-.card2
-{
-    /*grid-column:4/21;*/
-    grid-row: 4/7;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 10px;
-}
+
+
 .card
 {
     width: 32%;
     height: auto;
 }
 
-.hl
-{
-    font-size: 45px;
-    font-weight: bold;
-    font-family:'Times New Roman', Times, serif;
-    color: rgb(187, 8, 8);
-}
-.ml
-{
-    font-size: 20px;
-    font-weight: bold;
-    list-style: none;
-    margin-bottom: 3px;
-}
-.ml:hover
-{
-    font-size: 27px;
-    color: red;
-    text-shadow: 1px 1px 1px white;
-}
+
+
+
 
 /*****************************/
-.ranking
-{  
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    margin-bottom: 5px;
-}
-.pub_image
-{
-    width:150px;
-    height: 120px;
-    margin-bottom: 10px;
-    border-radius: 55px;
-}
+
+
 .article
 {
     margin-top: 50px;
