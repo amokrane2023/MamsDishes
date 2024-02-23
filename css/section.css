@@ -15,7 +15,6 @@
     }
 .recipes
     {
-        grid-column: 1/5;
         background-color: #333;
         text-align: center;
         color: antiquewhite;
@@ -33,7 +32,7 @@
         font-weight: bold;
         list-style: none;
         margin-bottom: 3px;
-        line-height: 1.5em;
+        
     }
 .ml:hover
     {
@@ -54,32 +53,20 @@
         margin-bottom: 5px;
         line-height: 2em;
     }
-.pub_image
-    {
-        width:150px;
-        height: 130px;
-        margin-bottom: 10px;
-        border-radius: 55px;
-    }
-.dishes
-    {
-        grid-column: 5/21;
-        margin-top: 2px;
-     
-    }
+
+
 .card1
     {
         grid-row: 1/7;
         display: flex;
-        justify-content:space-between;
-        
-        margin-bottom: 10px;           
+        justify-content:space-between;       
+                  
     }
 .card_screen
     {
         display: flex;
         flex-direction: column;
-        height: 660px;
+        /*height: 660px;*/
         
     }
 
@@ -96,9 +83,19 @@
 
 @media screen and (min-width:1200px)
 {
+    .recipes
+        {
+            grid-column: 1/5;
+        }
+    .dishes
+        {
+            grid-column: 5/21;
+            margin-top: 2px;
+        }
     .ml
         {
             font-size: 22px;
+            line-height: 1.5em;
         }  
     .ml:hover
         {
@@ -109,6 +106,22 @@
         {
             font-size: 42px;
         }
+    .pub_image
+        {
+            width:150px;
+            height: 130px;
+            margin-bottom: 10px;
+            border-radius: 55px;
+        }
+    .card1
+        {
+ 
+            grid-row: 1/7;
+            display: flex;
+            justify-content:space-between;                 
+            flex-flow: row wrap;
+            row-gap: 50px;
+        } 
     .card_screen
         {
             display: flex;
@@ -118,24 +131,31 @@
         }
     .cardimag
         {
-            display: inline-block;
             width: 100%;
             height: 300px;
         }
-    .card1
-        {
-            flex-direction: row;
-            flex-wrap: wrap;
-            
-        }
-        
     
+    .ranking
+        {  
+            line-height: 1.5em;
+        }
+ 
 }
 @media screen and (max-width:1199px) and (min-width:800px)
 {
+    .recipes
+        {
+            grid-column: 1/5;
+        }
+    .dishes
+        {
+            grid-column: 5/21;
+            margin-top: 2px;
+        }
     .ml
         {
             font-size: 18px;
+            line-height: 2.0em;
         }  
     .ml:hover
         {
@@ -146,12 +166,23 @@
         {
             font-size: 25px;
         }
+    .pub_image
+        {
+            width:150px;
+            height: 130px;
+            margin-bottom: 10px;
+            border-radius: 55px;
+        }
+    .card1
+        {
+            flex-direction: column;
+        }
     .card_screen
         {
             display: flex;
             flex-direction: row;
             width: 100%;
-            height: auto;
+            height: 300px;
 
         }
     .cardimag
@@ -160,18 +191,80 @@
             width: 300px;
             height: 300px;
             border: solid 4px white;
-        }
-    .card1
+        } 
+    .cardbody
         {
-            flex-direction: column;
-            justify-content: space-between;
-            
+            height: auto;
         }
+    .ranking
+        {  
+            line-height: 2.0em;
+        }
+
+    }
+@media screen and (max-width:799px)
+    {
+        .recipes
+            {
+                grid-column: 1/6;
+            }
+        .dishes
+            {
+                grid-column: 6/21;
+                margin-top: 2px;
+            }
+        .ml
+            {
+                font-size: 15px;
+                line-height: 2.0em;
+            }  
+        .ml:hover
+            {
+                font-size: 16px;
     
-   
-}
+            }
+        .hl
+            {
+                font-size: 20px;
+            }
+        .pub_image
+            {
+                width:100px;
+                height: 100px;
+                margin-bottom: 10px;
+                border-radius: 55px;
+            }
+        .card1
+            {
+                grid-row: 1/7;
+                display: flex;
+                justify-content:space-between;                 
+                flex-flow: row wrap;
+                
+            }
+        .card_screen
+            {
+                display: flex;
+                flex-direction:column;
+                width: 100%;
+                height: auto;   
+            }
+        .cardimag
+            {                
+                width: 100%;
+                height: 200px;
+                border: solid 4px white;
+            } 
+        .cardbody
+            {
+                height: auto;
+            }
+        .ranking
+            {  
+                line-height: 2.0em;
+            }
 
-
+        }
 .article
 {
     grid-column: 1/21;
@@ -184,24 +277,11 @@
 {
   
     grid-column: 1/21;
-    /*grid-row: 7/11;*/
-    /*background-color: red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-
-
-.card
-{
-    width: 32%;
-    height: auto;
-}
-
-
-
 
 
 /*****************************/
