@@ -96,7 +96,7 @@ body > .header
     }
     .element
     {
-        font-size: 21px    
+        font-size: 1.2vw ;  
     }
     .logo_menu:hover  .efirst_link
     {
@@ -120,7 +120,7 @@ body > .header
     .element
     {
         margin-right: 21px;
-        font-size: 14px;
+        font-size: 15px;
 
     }
     .efirst
